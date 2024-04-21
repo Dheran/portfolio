@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(0, 0, 0, 0.822);
+    font-family: Poppins,sans-serif;
+    color: #E5E5E5;
+    
+    
+}
+
+/* navbar css */
+
+.ml-auto {
+    margin-left: auto !important;
+    
+}
+.navbar {
+    background-color: transparent !important;
+}
+.nav-link {
+    color: #E5E5E5 !important; /* Set the color of nav-link */
+}
+
+
+/* nav bar css ends */
+/* home name  */
+.home-content {
+    text-align: center; /* Center the text horizontally */
+    height:80vh; /* Set the height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    
+    
+}
+#typing-text span {
+    text-decoration: underline !important;
+
+}
+
+
+h1 {
+    font-weight: bold;
+    color: #E5E5E5;
+    font-size: 80px;
+    margin-bottom: 34px;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5) !important;
+    
+}
+h4 {
+    font-size: 30px;
+}
+.fixed-block.block-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    display: block;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the width of the icons */
+    height: auto;
+}
+
+.cd-headline .cd-words-wrapper b.is-visible {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing-animation 3s steps(12) forwards;
+}
+
+@keyframes typing-animation {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.cd-headline .cd-words-wrapper b.is-visible:after {
+    content: "|"; /* Add cursor blinking effect */
+    margin-left: 3px;
+    animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* home page done */
+
+/* about page */
+.about-header {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.about-header p{
+    color: grey;
+}
+.about-header h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.about-header img {
+    width: 50px;
+    height: auto;
+    margin-left: 1300px;
+}
+.about-info {
+    display: flex;
+    align-items: center;
+  }
+  
+.demographic{
+    flex: 1;
+    display: flex;
+    /* border: 1px solid white; */
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px; 
+}
+
+  
+.myphoto {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    
+}
+  
+.text-content {
+    width: 70%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.text-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.text-content img {
+    width: 20px;
+    height: auto;
+}
+.more-info {
+    margin-left: -33px;
+}
+.personal-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.my-info{
+    padding-top: 10px;
+    list-style-type: none; 
+}
+.personal-info .my-info {
+    color: #FFFFFF; /* Set the text color for the content */
+}
+
+.personal-info .my-info::before {
+    content: attr(data-label); /* Set the content of the before pseudo-element to the data-label attribute value */
+    color: orange; /* Set the text color for the label */
+    margin-right: 5px; /* Add some spacing between the label and the content */
+}
+
+
+.download {
+    background-color: rgb(70, 160, 70);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+.line {
+    width: 100px !important;
+    height: 5px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.skill-info {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    /* border: 1px solid white; */
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px; 
+    margin-top: 40px;
+}
+.skill-info img{
+    width: 70px;
+    height: auto;
+    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+.tech-skill1,
+.tech-skill2,
+.tech-skill3,
+.tech-skill4,
+.tech-skill5,
+.tech-skill6 {
+    background-color: orange;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    
+}
+.description {
+    margin: 35px;
+    margin-top: 2px;
+}
+.skill-title{
+    margin: 35px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+
+}
+/* testing area */
+.page-slide-enter, .page-slide-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Override Bootstrap's default transition on navbar */
+.navbar-collapse {
+    transition: none !important;
+}
